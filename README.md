@@ -1,1 +1,1 @@
-# nostr-embed
+# angor-chat
