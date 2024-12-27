@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Create .env file
+        run: echo "REACT_APP_GIPHY_KEY=${{ secrets.GIPHY_KEY }}" > .env
+
       - name: Install dependencies
         run: yarn
 
