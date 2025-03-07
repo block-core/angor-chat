@@ -62,11 +62,8 @@ const AppMenuBase = (props: { children: React.ReactNode }) => {
                 fontSize: '0.8em',
                 color: theme.palette.text.disabled
             }}>
-                <Box sx={{mr: '20px'}}>{`NostrChat v${pack.version}`}</Box>
-                <Box component="a" href="https://github.com/NostrChat/NostrChat" target="_blank" rel="noreferrer"
-                     sx={{color: theme.palette.text.secondary}}>
-                    <Github height={20} style={{marginRight: '4px'}}/>
-                </Box>
+                <Box sx={{mr: '20px'}}>{`Angor Chat v${pack.version}`}</Box>
+ 
             </Box>
         </Box>
     </Box>

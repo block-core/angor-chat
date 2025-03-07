@@ -1,6 +1,6 @@
 {
-  "name": "nostr-chat",
-  "version": "0.1.6",
+  "name": "angor-chat",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@capacitor/assets": "^2.0.4",
