@@ -8,7 +8,7 @@ AngorChat is built on Nostr, and therefore doesn't rely on any centralized serve
 
 Our ReadMe is a summary about AngorChat, what it looks like, and how to use it.
 
-[Join AngorChat](https://www.angorchat.io/)
+[Join AngorChat](https://chat.angor.io/)
 
 ## What is Nostr?
 
@@ -16,7 +16,7 @@ Our ReadMe is a summary about AngorChat, what it looks like, and how to use it.
 
 ## How to log into AngorChat
 
-From the [Nostrchat.io](https://www.angorchat.io/) homepage choose one of the following:
+From the [Angor Chat](https://chat.angor.io/) homepage choose one of the following:
 
 **Create Nostr Account** (easiest option for first time users) — Click the button to “Create Nostr Account.” Instantly you’ll be given a new Nostr account. Once you login, it is highly recommended that you go to “Settings -> Keys” and save both your public and private keys. These keys are your access to your Nostr account, and you will need them again in the future.
 

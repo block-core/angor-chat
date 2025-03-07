@@ -3,8 +3,10 @@ import {PaletteMode} from '@mui/material';
 import {Channel, Platform, RelayDict} from 'types';
 
 export const DEFAULT_RELAYS: RelayDict = {
-    'wss://relay1.angorchat.io': {read: true, write: true},
-    'wss://relay2.angorchat.io': {read: true, write: true},
+    'wss://relay.primal.net': {read: true, write: true},
+    'wss://relay.nostr.band': {read: true, write: true},
+    'wss://relay1.angor.io': {read: true, write: true},
+    'wss://relay2.angor.io': {read: true, write: true},
     'wss://relay.damus.io': {read: true, write: true},
     'wss://relay.snort.social': {read: true, write: false},
     'wss://nos.lol': {read: true, write: true},
