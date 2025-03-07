@@ -7,7 +7,6 @@ import UserMenu from 'views/components/app-menu/user-menu';
 import useMediaBreakPoint from 'hooks/use-media-break-point';
 import useStyles from 'hooks/use-styles';
 import {appMenuAtom} from 'atoms';
-import Github from 'svg/github';
 import pack from '../../../../package.json';
 
 
