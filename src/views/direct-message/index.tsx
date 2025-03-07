@@ -117,7 +117,7 @@ const DirectMessagePage = (props: RouteComponentProps) => {
 
     if (!directMessage) {
         return <>
-            <Helmet><title>{t('NostrChat')}</title></Helmet>
+            <Helmet><title>{t('AngorChat')}</title></Helmet>
             <AppWrapper>
                 <AppMenu/>
                 <AppContent>
@@ -150,7 +150,7 @@ const DirectMessagePage = (props: RouteComponentProps) => {
 
     if (!ravenStatus.dmsDone) {
         return <>
-            <Helmet><title>{t(`NostrChat - ${profile?.name || npub}`)}</title></Helmet>
+            <Helmet><title>{t(`AngorChat - ${profile?.name || npub}`)}</title></Helmet>
             <AppWrapper>
                 <AppMenu/>
                 <AppContent>
@@ -173,7 +173,7 @@ const DirectMessagePage = (props: RouteComponentProps) => {
     }
 
     return <>
-        <Helmet><title>{t(`NostrChat - ${profile?.name || npub}`)}</title></Helmet>
+        <Helmet><title>{t(`AngorChat - ${profile?.name || npub}`)}</title></Helmet>
         <AppWrapper>
             <AppMenu/>
             <AppContent divide={!!threadRoot}>

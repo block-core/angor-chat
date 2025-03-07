@@ -56,7 +56,7 @@ const ChannelPublicPage = (props: RouteComponentProps) => {
 
     if (channel) {
         return <>
-            <Helmet><title>{t(`NostrChat - ${channel.name}`)}</title></Helmet>
+            <Helmet><title>{t(`AngorChat - ${channel.name}`)}</title></Helmet>
             <PublicBrand />
             <Box sx={{maxWidth: '500px', ml: '10px', mr: '10px'}}>
                 <ChannelCard channel={channel} onJoin={onJoin}/>
@@ -65,7 +65,7 @@ const ChannelPublicPage = (props: RouteComponentProps) => {
     }
 
     return <>
-        <Helmet><title>{t('NostrChat')}</title></Helmet>
+        <Helmet><title>{t('AngorChat')}</title></Helmet>
         <PublicBrand />
         <Box sx={{display: 'flex', alignItems: 'center'}}>
             {(() => {

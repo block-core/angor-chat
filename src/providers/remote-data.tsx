@@ -6,7 +6,7 @@ const RemoteDataProvider = (props: { children: React.ReactNode }) => {
     const [, setSpammers] = useAtom(spammersAtom);
 
     useEffect(() => {
-        fetch('https://spam.nostrchat.io/list').then(r => r.json()).then(r => {
+        fetch('https://spam.angorchat.io/list').then(r => r.json()).then(r => {
             const d:Record<string, number> = {}
             for(const item of r.list){
                 d[item.pub] = item.score;

@@ -70,7 +70,7 @@ const DirectMessagePublic = (props: RouteComponentProps) => {
 
     if (profile && pub) {
         return <>
-            <Helmet><title>{t(`NostrChat - ${profile.name || npub}`)}</title></Helmet>
+            <Helmet><title>{t(`AngorChat - ${profile.name || npub}`)}</title></Helmet>
             <PublicBrand />
             <Box sx={{maxWidth: isSm ? '500px' : '300px', ml: '10px', mr: '10px'}}>
                 <ProfileCard profile={profile} pub={pub} onDM={onDM}/>
@@ -79,7 +79,7 @@ const DirectMessagePublic = (props: RouteComponentProps) => {
     }
 
     return <>
-        <Helmet><title>{t('NostrChat')}</title></Helmet>
+        <Helmet><title>{t('AngorChat')}</title></Helmet>
         <PublicBrand />
         <Box sx={{display: 'flex', alignItems: 'center'}}>
             {(() => {

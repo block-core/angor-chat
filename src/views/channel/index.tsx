@@ -124,7 +124,7 @@ const ChannelPage = (props: RouteComponentProps) => {
 
     if (!cid) {
         return <>
-            <Helmet><title>{t('NostrChat')}</title></Helmet>
+            <Helmet><title>{t('AngorChat')}</title></Helmet>
             <AppWrapper>
                 <AppMenu/>
                 <AppContent>
@@ -145,7 +145,7 @@ const ChannelPage = (props: RouteComponentProps) => {
 
     if (!channel) {
         return <>
-            <Helmet><title>{t('NostrChat')}</title></Helmet>
+            <Helmet><title>{t('AngorChat')}</title></Helmet>
             <AppWrapper>
                 <AppMenu/>
                 <AppContent>
@@ -188,7 +188,7 @@ const ChannelPage = (props: RouteComponentProps) => {
 
     if (!ravenStatus.syncDone) {
         return <>
-            <Helmet><title>{t(`NostrChat - ${channel.name}`)}</title></Helmet>
+            <Helmet><title>{t(`AngorChat - ${channel.name}`)}</title></Helmet>
             <AppWrapper>
                 <AppMenu/>
                 <AppContent>
@@ -212,7 +212,7 @@ const ChannelPage = (props: RouteComponentProps) => {
 
 
     return <>
-        <Helmet><title>{t(`NostrChat - ${channel.name}`)}</title></Helmet>
+        <Helmet><title>{t(`AngorChat - ${channel.name}`)}</title></Helmet>
         <AppWrapper>
             <AppMenu/>
             <AppContent divide={!!threadRoot}>

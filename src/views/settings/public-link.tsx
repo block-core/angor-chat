@@ -36,7 +36,7 @@ const SettingsPublicLinkPage = (_: RouteComponentProps) => {
     const url = `${window.location.protocol}//${window.location.host}/dm/${npub}`;
 
     return <>
-        <Helmet><title>{t('NostrChat - Public DM page')}</title></Helmet>
+        <Helmet><title>{t('AngorChat - Public DM page')}</title></Helmet>
         <AppWrapper>
             <SettingsMenu/>
             <AppContent>

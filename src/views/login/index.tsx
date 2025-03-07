@@ -19,7 +19,7 @@ const LoginPage = (_: RouteComponentProps) => {
     const onDone = () => navigate('/').then();
 
     return <>
-        <Helmet><title>{t('NostrChat - Sign in')}</title></Helmet>
+        <Helmet><title>{t('AngorChat - Sign in')}</title></Helmet>
         <Box sx={{
             width: isSm ? '590px' : '96%'
         }}>
