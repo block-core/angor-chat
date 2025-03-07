@@ -11,6 +11,7 @@ import ChannelAddMenu from 'views/components/app-menu/channel-add-menu';
 import ListItem from 'views/components/app-menu/list-item';
 import {channelAtom, keysAtom, readMarkMapAtom} from 'atoms';
 import {Channel} from 'types';
+import Avatar from '../avatar';
 
 const ChannelListItem = (props: { c: Channel }) => {
     const {c} = props;
@@ -26,7 +27,25 @@ const ChannelListItem = (props: { c: Channel }) => {
 
     const isSelected = c.id === channel?.id && location.pathname.startsWith('/channel/');
 
-    return <ListItem key={c.id} label={c.name} href={`/channel/${c.id}`} selected={isSelected} hasUnread={hasUnread}/>;
+    return <ListItem 
+        key={c.id} 
+        label={
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <Box sx={{ mr: '8px' }}>
+                    <Avatar 
+                        src={c.picture} 
+                        seed={c.id} 
+                        size={24} 
+                        rounded 
+                    />
+                </Box>
+                {c.name}
+            </Box>
+        } 
+        href={`/channel/${c.id}`} 
+        selected={isSelected} 
+        hasUnread={hasUnread}
+    />;
 }
 
 const ChannelList = () => {

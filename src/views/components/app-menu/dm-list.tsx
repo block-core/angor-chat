@@ -14,6 +14,7 @@ import {directMessageAtom, directMessagesAtom, keysAtom, profilesAtom, readMarkM
 import Plus from 'svg/plus';
 import {DirectContact} from 'types';
 import {truncateMiddle} from 'util/truncate';
+import Avatar from '../avatar';
 
 const DmListItem = (props: { contact: DirectContact }) => {
     const {contact} = props;
@@ -32,7 +33,24 @@ const DmListItem = (props: { contact: DirectContact }) => {
     const label = profile?.name || truncateMiddle(contact.npub, 28, ':');
     const isSelected = contact.pub === directMessage && location.pathname.startsWith('/dm/');
 
-    return <ListItem label={label} href={`/dm/${contact.npub}`} selected={isSelected} hasUnread={hasUnread}/>;
+    return <ListItem 
+        label={
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <Box sx={{ mr: '8px' }}>
+                    <Avatar 
+                        src={profile?.picture} 
+                        seed={contact.pub} 
+                        size={24} 
+                        rounded
+                    />
+                </Box>
+                {label}
+            </Box>
+        } 
+        href={`/dm/${contact.npub}`} 
+        selected={isSelected} 
+        hasUnread={hasUnread}
+    />;
 }
 
 const DmList = () => {
